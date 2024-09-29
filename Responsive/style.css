@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    min-width: 1400px;
+}
+main{
+   display : flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+h1{
+    font-weight: bolder;
+}
+.text{
+    width: 30%;
+    line-height: 2;
+}
+.picture img{
+    /* width: 80%; */
+    padding-bottom: 30px;
+    padding-right: 40px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-right: 55px;
+}
+.article{
+    width: 40%;
+    display: flex;
+    gap: 20px;
+}
+.box p{
+    width: 140px;
+}
+
+@media (max-width:830px) {
+    .container{
+        max-width: 830px;
+    }
+    .article{
+        margin-right: 480px;
+    }
+    .footer-pic img{
+        display: none;
+    }
+    .picture img{
+        width: 65%;
+    }
+}
+
+@media (max-width: 375px){
+    .container {
+        max-width: 375px;
+    }
+    main {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 70px;
+        justify-content: center;
+    }
+    .picture img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    .article {
+        margin-right: 690px;
+    }
+}
